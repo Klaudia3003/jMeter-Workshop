@@ -296,7 +296,7 @@ Beispiel-Workload als Matrix-Mix:
 
 - Genieren "echter" Daten kann bei großen Daten problematisch werden &rarr; Workload Entwickler müsste all Möglichen Values kennen
   - Uniform Random: Generierung von gleichverteilten Zufallsdaten, z.B. für Anzahl gewählter Items
-  - Non-Uniform Random: in normalfall sind Datenzugriffe nicht gleichverteilt! &rarr; Datengenerierung sollte Wahrscheinlichkeit berücksichtigen
+  - Non-Uniform Random: im Normalfall sind Datenzugriffe nicht gleichverteilt! &rarr; Datengenerierung sollte Wahrscheinlichkeit berücksichtigen
 
 # Definieren der Skalierungsregeln
 
@@ -360,7 +360,7 @@ Wir müssen also dafür sorgen das die einzelnen Use-Case mit den entsprechende 
 - Thread Group mit 20 Benutzern
 - Thread Group mit 10 Benutzern
 
-**Wichtig:** Checkbox "Run Thread Groups consecutevly" sollte dem gewünschten Test-Flow entsprechen
+**Wichtig:** Checkbox "Run Thread Groups consecutively" sollte dem gewünschten Test-Flow entsprechen
 
 # Praxisbeispiel
 
@@ -459,7 +459,7 @@ Wichtigste Einstellungen:
 | Classic            | Einfache Szenarios, Stress/Soak Testing                              |
 | Arrivals           | Soak Testing: App-Verhalten wenn alle n-Minuten x-User hinzukommen   |
 | Free Form Arrivals | Vergleichbar mit Arrival Thread Group                                |
-| Concurrency        | Wie klassiche Threadgroup. Aber einfacher und weniger Speicherbedarf |
+| Concurrency        | Wie klassische Threadgroup. Aber einfacher und weniger Speicherbedarf |
 | Stepping           | Ältere Version der Threadgroup mit mehr Konfigurationsaufwand        |
 | Ultimate           | Komplexe Spike Testing Szenarios                                     |
 
@@ -496,7 +496,7 @@ Wichtigste Einstellungen:
 
 - **OS Process request:** Häufig nützlich in setUp/tearDown-Szenarien
 
-- Sollte man auch bei den Plugins keinen passen Sampler finden &rarr; Es lassen sich auch eigene Sampler schreiben. Häufig findet sich auch auf Github etwas!
+- Sollte man auch bei den Plugins keinen passenden Sampler finden &rarr; Es lassen sich auch eigene Sampler schreiben. Häufig findet sich auch auf Github etwas!
 
 # Controller
 
@@ -624,7 +624,7 @@ Listener können sehr Ressourcenintensiv sein!
   - View Results in Table
   - View Results Tree
 
-Eregebnisse können auch in Files (csv, xml) zur weiterverarbeitung weggeschrieben werden
+Ergebnisse können auch in Files (csv, xml) zur Weiterverarbeitung weggeschrieben werden
 
 - Default konfigurierbar in jmeter.properties bzw. user.properties
 - mehr Details siehe: [https://jmeter.apache.org/usermanual/listeners.html](https://jmeter.apache.org/usermanual/listeners.html)
@@ -752,7 +752,7 @@ Zugriff innerhalb des Testplans auf die Werte: ${HOST}, ${THREADS}, ${LOOPS}
 # Testfragment
 
 - wird nicht ausgeführt solange es nicht in einem Modul-Controller oder Include-Controller refereniert wird.
-  &rarr; Ermöglicht gleichzeitges Arbeiten an modulen in separaten Files
+  &rarr; Ermöglicht gleichzeitges Arbeiten an Modulen in separaten Files
 
 - Dient der Code-Wiederverwendung innerhalb von Testplänen und hilft sehr große Testpläne wartbar zu machen
 
@@ -892,7 +892,7 @@ Assertion 1
 
 # BeanShell
 
-Ist die BeanShell Tot? &rarr; [https://www.blazemeter.com/blog/is-beanshell-dead](https://www.blazemeter.com/blog/is-beanshell-dead)
+Ist die BeanShell tot? &rarr; [https://www.blazemeter.com/blog/is-beanshell-dead](https://www.blazemeter.com/blog/is-beanshell-dead)
 
 - langsamer und mehr Speicherverbrauch als JSR223+Groovy
 
