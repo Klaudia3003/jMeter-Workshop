@@ -264,7 +264,7 @@ Typische Metriken sind:
 - Flat Sequence Mix:
   - Spezifiziert ein Set von Operations-Sequenzen
   - z.B. Set1=Op1,Op2 und Set2=Op1,Op3
-  - jedem Set wird eine Wahrscheinlichkeit zugeordnet und dementsprechen ausgewählt
+  - jedem Set wird eine Wahrscheinlichkeit zugeordnet und dementsprechend ausgewählt
 
 # Design der Load
 
@@ -292,9 +292,9 @@ Beispiel-Workload als Matrix-Mix:
 
 # Design der Load
 
-- Best-Practice: Eine klein Zahl an Fehlern durch invalide Daten einfügen um auch Probleme im Error-Handling aufzudecken
+- Best-Practice: Eine kleine Zahl an Fehlern durch invalide Daten einfügen um auch Probleme im Error-Handling aufzudecken
 
-- Genieren "echter" Daten kann bei großen Daten problematisch werden &rarr; Workload Entwickler müsste all Möglichen Values kennen
+- Generieren "echter" Daten kann bei großen Daten problematisch werden &rarr; Workload Entwickler müsste all Möglichen Values kennen
   - Uniform Random: Generierung von gleichverteilten Zufallsdaten, z.B. für Anzahl gewählter Items
   - Non-Uniform Random: in normalfall sind Datenzugriffe nicht gleichverteilt! &rarr; Datengenerierung sollte Wahrscheinlichkeit berücksichtigen
 
